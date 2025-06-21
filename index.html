@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysha - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Mysha's Portfolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm Mysha!</h1>
+        <p class="hero-subtitle">Web Developer & Creative Enthusiast</p>
+        <p>Passionate about creating beautiful, functional websites and learning new technologies.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a passionate web developer who enjoys learning coding, creating websites, and expressing creativity online. I love turning ideas into interactive digital experiences.</p>
+          <p>When I'm not coding, I enjoy drawing, exploring new technologies, and creating new things that make a difference.</p>
+        </div>
+        <div class="about-image">
+          <img src="Screenshot 2025-06-21 024101.png" alt="Profile" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Portfolio Website">
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio built with HTML, CSS, and JavaScript featuring smooth navigation and mobile-first design.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" alt="Web App">
+          </div>
+          <div class="project-content">
+            <h3>Interactive Web App</h3>
+            <p>A dynamic web application with form handling, local storage, and responsive design principles.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS Grid</span>
+              <span class="tech-tag">Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="Future Project">
+          </div>
+          <div class="project-content">
+            <h3>Coming Soon</h3>
+            <p>Currently working on an exciting new project that combines modern web technologies with creative design.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">API Integration</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-disabled">In Progress</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skills-list">
+            <span class="skill-item">HTML5</span>
+            <span class="skill-item">CSS3</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">Responsive Design</span>
+            <span class="skill-item">CSS Grid & Flexbox</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <div class="skills-list">
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Replit</span>
+            <span class="skill-item">Font Awesome</span>
+            <span class="skill-item">Web Accessibility</span>
+            <span class="skill-item">Mobile-First Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Learning</h3>
+          <div class="skills-list">
+            <span class="skill-item">React</span>
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Python</span>
+            <span class="skill-item">Database Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <span>mysha@example.com</span>
+            </div>
+            <div class="contact-method">
+              <i class="fab fa-github"></i>
+              <span>github.com/mysha</span>
+            </div>
+            <div class="contact-method">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/mysha</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+      </div>
+
+      <p id="response"></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Mysha. Built with passion and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
